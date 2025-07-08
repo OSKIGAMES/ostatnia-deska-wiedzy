@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostatnia deska wiedzy - Cennik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #93c5fd);
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+    <div class="gradient-bg text-white">
+        <header class="text-center py-12 px-4">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Ostatnia deska wiedzy</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto">Im więcej kupujesz - tym mniej płacisz, a więcej zyskujesz!</p>
+        </header>
+    </div>
+
+    <main class="container mx-auto px-4 py-12">
+        
+        <h2 class="text-3xl font-bold text-center mb-10 text-gray-900 dark:text-white">Cennik</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Sprawdziany -->
+            <div class="card rounded-2xl p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold mb-6 text-blue-800 dark:text-blue-300">Sprawdziany</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">(Gotowce od wydawnictwa)</p>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex justify-between border-b pb-2 border-gray-200 dark:border-gray-700"><span>1 sprawdzian</span> <span class="font-semibold text-blue-600 dark:text-blue-400">6 zł</span></li>
+                    <li class="flex justify-between border-b pb-2 border-gray-200 dark:border-gray-700"><span>2 sprawdziany</span> <span class="font-semibold text-blue-600 dark:text-blue-400">10 zł</span></li>
+                    <li class="flex justify-between"><span>3 sprawdziany</span> <span class="font-semibold text-blue-600 dark:text-blue-400">8 zł</span></li>
+                </ul>
+            </div>
+
+            <!-- Kartkówki -->
+            <div class="card rounded-2xl p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold mb-6 text-green-800 dark:text-green-300">Kartkówki</h3>
+                 <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">(Bazy zadań z danego tematu)</p>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex justify-between border-b pb-2 border-gray-200 dark:border-gray-700"><span>1 kartkówka (1 temat)</span> <span class="font-semibold text-green-600 dark:text-green-400">5 zł</span></li>
+                    <li class="flex justify-between"><span>1 kartkówka (3 tematy)</span> <span class="font-semibold text-green-600 dark:text-green-400">14 zł</span></li>
+                </ul>
+            </div>
+
+            <!-- Bazy Zadań -->
+            <div class="card rounded-2xl p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 class="text-2xl font-bold mb-6 text-purple-800 dark:text-purple-300">Bazy Zadań</h3>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex justify-between border-b pb-2 border-gray-200 dark:border-gray-700"><span>10 zadań</span> <span class="font-semibold text-purple-600 dark:text-purple-400">7 zł</span></li>
+                    <li class="flex justify-between"><span>20-30 zadań</span> <span class="font-semibold text-purple-600 dark:text-purple-400">14 zł</span></li>
+                </ul>
+                <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">(cena zależna od ilości zadań) -- po większą ilość zadań zapraszam na pv w celu ustalenia</p>
+            </div>
+
+            <!-- Dyski -->
+            <div class="md:col-span-2 lg:col-span-3 w-full">
+                 <div class="card rounded-2xl p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold mb-6 text-orange-800 dark:text-orange-300">Dyski z Gotowcami</h3>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                        <div class="flex justify-between items-center border-b md:border-b-0 md:border-r pr-4 pb-2 md:pb-0 border-gray-200 dark:border-gray-700">
+                            <span class="text-lg">1 przedmiot (jedno wydawnictwo)</span>
+                            <span class="font-semibold text-orange-600 dark:text-orange-400 text-lg">47 zł</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg">2 przedmioty (jedno wydawnictwo)</span>
+                            <span class="font-semibold text-orange-600 dark:text-orange-400 text-lg">60 zł</span>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-center text-gray-600 dark:text-gray-400">Reszta cen dysków do ustalenia na pv.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="mt-16 text-center">
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl max-w-2xl mx-auto border border-gray-200 dark:border-gray-700">
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Zainteresowany?</h3>
+                <p class="mt-2 text-gray-600 dark:text-gray-400">W celu zakupu zapraszam na wiadomość prywatną na Discordzie.</p>
+                <div class="mt-6">
+                    <p class="text-lg font-semibold text-indigo-600 dark:text-indigo-400">Discord:</p>
+                    <p id="discord-username" class="text-2xl font-mono bg-gray-100 dark:bg-gray-700 rounded-md p-3 inline-block mt-2">O5K4R_</p>
+                    <button onclick="copyToClipboard()" class="ml-2 bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition-colors">Kopiuj</button>
+                </div>
+                <div id="copy-feedback" class="mt-2 text-sm text-green-500 opacity-0 transition-opacity">Skopiowano!</div>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer class="text-center py-6 text-gray-500 dark:text-gray-400 text-sm">
+        <p>&copy; 2024 Ostatnia deska wiedzy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function copyToClipboard() {
+            // Create a temporary textarea element
+            const textarea = document.createElement('textarea');
+            const textToCopy = document.getElementById('discord-username').innerText;
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary element
+            document.body.removeChild(textarea);
+
+            // Show feedback message
+            const feedback = document.getElementById('copy-feedback');
+            feedback.style.opacity = '1';
+            setTimeout(() => {
+                feedback.style.opacity = '0';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
